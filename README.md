@@ -40,10 +40,11 @@ npm i express dotenv axios ejs cookie-parser jsonwebtoken passport passport-gith
 ### 3️⃣ Set Up Environment Variables
 Create a `.env` file in the project root and add the following:
 ```env
-GITHUB_PAT=your_github_personal_access_token
-SONARCLOUD_API_TOKEN=your_sonarcloud_api_token
-NVD_API_KEY=your_nvd_api_key
-SESSION_SECRET=your_session_secret
+GITHUB_CLIENT_ID=
+GITHUB_CLIENT_SECRET=
+GITHUB_ACCESS_TOKEN=
+JWT_SECRET=
+
 ```
 
 ### 4️⃣ Run the Server
