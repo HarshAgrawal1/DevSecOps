@@ -1,7 +1,7 @@
 # DevSecOps Security Scanner
 
 ## Overview
-This project is a **GitHub repository security scanner** that checks for vulnerabilities using  security API, including **GitHub Advisory Database, SonarCloud, and NVD API**. It allows users to scan repositories for known vulnerabilities in dependencies.
+This project is a **GitHub repository security scanner** that checks for vulnerabilities using  security API, including **GitHub Advisory Database**. It allows users to scan repositories for known vulnerabilities in dependencies.
 
 ## Features
 - **Scan GitHub repositories** for security vulnerabilities.
