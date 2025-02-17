@@ -1,0 +1,16 @@
+<% if (typeof error !== "undefined" && error) { %>
+    <p class="message error"><%= error %></p>
+<% } else if (alerts.length === 0) { %>
+    <p class="message success">✅ No security threats found in this repository!</p>
+<% } else { %>
+    <ul class="alert-list">
+        <% alerts.forEach(alert => { %>
+            <li class="alert-item">
+                <strong>🔴 <%= alert.title %></strong>
+                <p>Severity: <%= alert.severity %></p>
+                <p>Package: <%= alert.packageName %> (Version: <%= alert.version %>)</p>
+                <p><a href="<%= alert.url %>" target="_blank">More Info</a></p>
+            </li>
+        <% }) %>
+    </ul>
+<% } %>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repository Operations - <%= repoName %></title>
+    <link rel="stylesheet" href="/css/reoperation.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">📂 Repository: <%= repoName %></h1>
+        
+        <div class="repo-details">
+            <p>📝 Description: <em>This is a sample repository description.</em></p>
+            <p>🌐 Repository Link: <a href="https://github.com/your_username/<%= repoName %>" target="_blank">View on GitHub</a></p>
+            <p>🔄 Last Updated: <strong>Feb 16, 2025</strong></p>
+        </div>
+
+        <button onclick="window.location.href='/securityscan/<%= repoName %>'" class="btn primary">
+            🔍 Check Security Threats
+        </button>
+
+        <a href="/" class="btn secondary">🏠 Back to Home</a>
+    </div>
+</body>
+</html>
